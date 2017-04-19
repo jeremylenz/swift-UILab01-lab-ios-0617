@@ -19,12 +19,15 @@ class ViewController: UIViewController {
         
         lightBulb.backgroundColor = UIColor.blue
         
+        
     }
     
     
     @IBAction func colorSelected(_ sender: UISegmentedControl) {
+        let selectableColors = [UIColor.red, UIColor.yellow, UIColor.blue, UIColor.green]
+        lightBulb.backgroundColor = selectableColors[sender.selectedSegmentIndex]
         
-        print(sender.selectedSegmentIndex)
+        // print(sender.selectedSegmentIndex)
         
     }
     
